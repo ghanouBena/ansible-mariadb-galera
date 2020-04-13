@@ -1,0 +1,21 @@
+---
+# defaults file for roles/mariadb
+packages:
+ - python3-PyMySQL
+ - rsync
+ - policycoreutils-python-utils
+ - mariadb-server
+ - mariadb-test
+ - mariadb-server-galera
+ - galera
+#hostname
+hostname: "server1.centos.dz"
+
+#vars for configure datbase
+mysql_user: "root"
+new_root_passwd: "ghanou2020"
+mysql_old_root_password: ""
+
+#Addresses for galera nodes
+addresses:
+  - "192.168.43.23,192.168.43.87"

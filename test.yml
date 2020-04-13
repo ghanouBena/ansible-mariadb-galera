@@ -1,0 +1,4 @@
+---
+- hosts: dbservers
+  tasks:
+   - debug: var=ansible_default_ipv4.address
